@@ -2046,7 +2046,7 @@ editor.angleSnapSprite.gameObject.SetActive (false);
                 ShowMenu(false);
 
             //show and update the angle snap and symmetry mode labels
-            ShowSnapLabels();
+            //ShowSnapLabels();
 
             ShowAutoStruts();
 

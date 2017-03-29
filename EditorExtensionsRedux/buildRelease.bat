@@ -1,10 +1,10 @@
 ﻿@echo off
-set DEFHOMEDRIVE=d:
+set DEFHOMEDRIVE=c:
 set DEFHOMEDIR=%DEFHOMEDRIVE%%HOMEPATH%
 set HOMEDIR=
 set HOMEDRIVE=%CD:~0,2%
 
-set RELEASEDIR=d:\Users\jbb\release
+set RELEASEDIR=c:\Users\jbb\release
 set ZIP="c:\Program Files\7-zip\7z.exe"
 echo Default homedir: %DEFHOMEDIR%
 
@@ -36,8 +36,8 @@ del /Q %HOMEDIR%\install\GameData\EditorExtensionsRedux
 del /Q %HOMEDIR%\install\GameData\EditorExtensionsRedux\Textures
 
 
-copy /Y "%~dp0bin\Release\EditorExtensionsRedux.dll" "%HOMEDIR%\install\GameData\EditorExtensionsRedux\Plugins"
-copy /Y "%~dp0bin\Release\Textures\*.png" "%HOMEDIR%\install\GameData\EditorExtensionsRedux\Textures"
+copy /Y "C:\Users\jbb\EditorExtensionsRedux\EditorExtensionsRedux\bin\Debug\EditorExtensionsRedux.dll" "%HOMEDIR%\install\GameData\EditorExtensionsRedux\Plugins"
+copy /Y "C:\Users\jbb\EditorExtensionsRedux\EditorExtensionsRedux\bin\Debug\Textures\*.png" "%HOMEDIR%\install\GameData\EditorExtensionsRedux\Textures"
 copy /Y "EditorExtensionsRedux.version" "%HOMEDIR%\install\GameData\EditorExtensionsRedux"
 
 copy /Y "License.txt" "%HOMEDIR%\install\GameData\EditorExtensionsRedux"
